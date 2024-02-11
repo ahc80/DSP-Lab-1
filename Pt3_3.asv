@@ -1,0 +1,79 @@
+function diffy = discrete_differentiator(f, T)
+
+    diffy = zeros(1,T);
+    
+    for k = 2:T
+        diffy(k) = (1/T) * (f(k) - f(k-1));
+    end
+end
+
+function inty = discrete_integrator(x, T)
+     inty = zeros(1, T);
+
+     for k = 2:T
+         inty(k) = inty(k-1) + x(k)*T;
+     end
+end
+
+function 
+n = -10:20;
+
+signal1 = (n >= 0) - ((n - 5) >= 0);
+signal2 = (n >= 0) - ((n - 11) >= 0);
+
+T = 1;
+
+diff_signal1 = discrete_differentiator(signal1, T);
+integ_signal1 = discrete_integrator(signal1, T);
+
+diff_signal2 = discrete_differentiator(signal2, T);
+integ_signal2 = discrete_integrator(signal2, T);
+
+subplot(2,2,1);
+stem(n, signal1);
+title('Input Signal 1');
+xlabel('n');
+ylabel('Amplitude');
+
+subplot(2,2,2);
+stem(n(2:end), diff_signal1);
+title('Differentiated Signal 1');
+xlabel('n');
+ylabel('Amplitude');
+
+subplot(2,2,3);
+stem(n, signal2);
+title('Input Signal 2');
+xlabel('n');
+ylabel('Amplitude');
+
+subplot(2,2,4);
+stem(n(2:end), diff_signal2);
+title('Differentiated Signal 2');
+xlabel('n');
+ylabel('Amplitude');
+
+figure;
+subplot(2,2,1);
+stem(n, signal1);
+title('Input Signal 1');
+xlabel('n');
+ylabel('Amplitude');
+
+subplot(2,2,2);
+stem(n(2:end), integ_signal1);
+title('Integrated Signal 1');
+xlabel('n');
+ylabel('Amplitude');
+
+subplot(2,2,3);
+stem(n, signal2);
+title('Input Signal 2');
+xlabel('n');
+ylabel('Amplitude');
+
+subplot(2,2,4);
+stem(n(2:end), integ_signal2);
+title('Integrated Signal 2');
+xlabel('n');
+ylabel('Amplitude');
