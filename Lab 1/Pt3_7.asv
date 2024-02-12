@@ -21,7 +21,7 @@ stem(n, c);
 title('System 3 Output');
 
 figure;
-k = -15:15;
+k = -10:10;
 s = (k == 0) - (k == 5);
 subplot(3, 3, 2);
 stem(k, s);
@@ -42,7 +42,9 @@ subplot(3, 3, 6);
 stem(k, f);
 title('System 3 Output');
 
+
 r = (k == 2) - (k == 7);
+
 g=system1(r);
 subplot(3, 3, 7);
 stem(k, g);
