@@ -1,7 +1,0 @@
-% Function to implement filter S3
-function y = S3(x)
-    y = zeros(length(x), 1);
-    for n = 2:length(x)  % Start at 2 because we reference n-1
-        y(n) = 2*x(n) - x(n-1);
-    end
-end
