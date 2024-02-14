@@ -31,13 +31,13 @@ title('Differentiated Signal 1');
 xlabel('n');
 ylabel('Amplitude');
 
-subplot(2,3,3);
+subplot(2,3,5);
 stem(n, diff_signal2);
 title('Differentiated Signal 2');
 xlabel('n');
 ylabel('Amplitude');
 
-subplot(2,3,5);
+subplot(2,3,3);
 stem(n, integ_signal1);
 title('Integrated Signal 1');
 xlabel('n');
