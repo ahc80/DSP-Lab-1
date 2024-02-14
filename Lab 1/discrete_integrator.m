@@ -1,3 +1,4 @@
+%Integrator Function
 function inty = discrete_integrator(x, T)
      inty = zeros(1, T);
 

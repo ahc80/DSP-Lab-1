@@ -1,3 +1,4 @@
+%Differentiator Function
 function diffy = discrete_differentiator(f, T)
 
     diffy = zeros(1,T);
