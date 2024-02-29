@@ -1,0 +1,7 @@
+function X = DTFT(x, n0, dw)
+    N = length(x);
+    X = zeros(1, N);
+    w = -pi:dw:pi;
+    j = sqrt(-1);
+    for jdw = 1:length(w)
+        X(jdw) = sum()
