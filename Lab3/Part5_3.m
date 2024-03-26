@@ -19,14 +19,14 @@ Hb_with = (Hb.^2).*abs(sinc(f./fs));
 
 %Plot without Sample and Hold 
 plot(f,Hb_without)
-title ('Magnitude with Sample')
+title ('Magnitude without Sample')
 xlabel('Frequency')
 ylabel ('Magnitude')
 figure
 
 %Plot with Sample and Hold
 plot(f,Hb_with)
-title ('Magnitude without Sample')
+title ('Magnitude with Sample')
 xlabel('Frequency')
 ylabel ('Magnitude')
 figure
