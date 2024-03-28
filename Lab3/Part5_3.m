@@ -27,7 +27,7 @@ figure
 
 %Plot with Sample and Hold
 plot(f,Hb_with)
-title ('Magnitude with Sample')
+title ('Magnitude of Complete System (with Sample)')
 xlabel('Frequency')
 ylabel ('Magnitude')
 xticks(-1:0.1:1);
