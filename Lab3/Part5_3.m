@@ -1,3 +1,4 @@
+%5.3
 %Setting Parameters
 Ts = 1; % Secs
 fc = 0.45; %Hertz
