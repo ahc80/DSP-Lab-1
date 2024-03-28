@@ -22,6 +22,7 @@ plot(f,Hb_without)
 title ('Magnitude without Sample')
 xlabel('Frequency')
 ylabel ('Magnitude')
+xticks(-1:0.1:1);
 figure
 
 %Plot with Sample and Hold
@@ -29,4 +30,5 @@ plot(f,Hb_with)
 title ('Magnitude with Sample')
 xlabel('Frequency')
 ylabel ('Magnitude')
+xticks(-1:0.1:1);
 figure
