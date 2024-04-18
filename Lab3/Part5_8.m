@@ -1,11 +1,11 @@
 %5.8
 %Audio read the song
 [raw_song, Fs] = audioread('music.au');
-%sound(raw_song, Fs);  % Play back at original sampling rate
+sound(raw_song, Fs);  % Play back at original sampling rate
 
 pause(20)
 
-sig1
+%sig1
 sig1 = raw_song(1:2:end); % Decimate by 2
 sound(sig1);
 

@@ -1,4 +1,4 @@
-[rawaudio, Fs] = audioread('music.au');
+p[rawaudio, Fs] = audioread('music.au');
 sound(rawaudio, Fs);
 s
 F1audio = Filter1(rawaudio);
